@@ -10,7 +10,7 @@ Create a `docker-compose.yml` file
 version: '3'
 services:
     notebook:
-        image: "vimo76/weekly-field-issues:0.2-alpine"
+        image: "vimo76/weekly-field-issues"
         volumes:
         - D:\Data:/data
         environment:
