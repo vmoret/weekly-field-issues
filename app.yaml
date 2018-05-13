@@ -1,0 +1,77 @@
+new: filter=26873 and created > startOfWeek("-7d")
+Active: filter=26874
+Unresolved: filter=28853
+Unresolved (S1+S2): filter=28853 and severity in ("S1 - Major", "S2 - High")
+
+ClickShare: 
+        projects: 
+                - CS-QA ClickShare PQM
+        boards: 
+                - 756
+OpSpace: 
+        projects: 
+                - OWS
+        boards: 
+                - 976
+                - 774
+                - 552
+                - 611
+TFN: 
+        projects: 
+                - TFN
+                - NGP
+        boards: 
+                - 774
+                - 712 
+SDP: 
+        projects: 
+                - BCMC
+                - GREEN BCM BOX and POWER BOX 19INCH
+                - LVW SDP
+        boards: 
+                - 645 
+RPC: 
+        projects:
+                - GH2
+                - MVL
+                - ODL
+                - OL
+                - OLS
+                - OVL
+        boards: NULL
+LCD: 
+        projects: 
+                - EVD-4621
+                - HVD/LVD
+                - KVD / IVD
+                - LDX
+                - Nautilus
+                - OVD
+        boards: NULL
+WePresent: 
+        projects: 
+                - MirrorOp.FAE.Tickets
+                - SharePod.Mozart385
+                - Vitali.MirrorOp.Sender
+                - Vitali.Presenter
+                - WiPG 2000S
+                - WiPG-1000P
+                - WiPG-1600.WM8750
+                - WiPG1600w
+                - MirrorOp.Receiver(Windows)
+        boards: 
+                - 1005
+                - 1008
+                - 1046
+WeConnect: 
+        projects: 
+                - ND EDU System
+        boards: NULL
+Other: 
+        projects: 
+                - ND Assets
+                - NGX11-Suite
+                - OSV
+                - OSV Alignment Tool
+        boards: NULL
+
