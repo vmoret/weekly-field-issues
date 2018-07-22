@@ -102,7 +102,7 @@ def main():
 
     # get auth from environment variables
     auth = tuple(os.getenv(x) for x in ('USER', 'PASSWORD'))
-
+    
     # initialize iTrack ReST API service
     fields = ('key', 'project', 'issuetype', 'customfield_10021',
               'customfield_10002', 'issuelinks')
@@ -131,7 +131,7 @@ def main():
 
     # save XL workbook
     wb.save('/data/weekly-field-issues-{:%Y-%m-%d}.xlsx'.format(dt.now()))
-
+    
 if __name__ == '__main__':
     main()
 

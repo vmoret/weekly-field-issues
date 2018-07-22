@@ -43,8 +43,10 @@ class ITrackService(object):
 
     def sprints(self, board_id, state='active'):
         url = self.__url + '/rest/agile/1.0/board/{:d}/sprint'.format(board_id)
-        ##print(dict(url=url, params=dict(state=state)))
-        yield from (x['id'] for x in self.__http_get(url, params=dict(state=state)).json()['values'])
+        print(dict(url=url, params=dict(state=state)))
+        data = self.__http_get(url, params=dict(state=state)).json()
+        if 'values' in data:
+            yield from (x['id'] for x in data['values'])
 
     def stories(self, sprint_id):
         yield from self.search('Sprint={}'.format(sprint_id))
