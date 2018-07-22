@@ -23,3 +23,8 @@ and run it with `docker-compose`.
 ```bash
 docker-compose up
 ```
+
+## Configuration
+
+When you want to modify the configuration -- copy / paste `app.yaml` to the 
+`data` directory and modify the YAML file.

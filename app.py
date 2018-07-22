@@ -14,7 +14,9 @@ from services import ITrackService
 from sprint import calc_handled_in_active_sprint
 
 
-def load_options(fp):
+def load_options(fname, paths):
+    fps = (os.path.join(path, fname) for path in paths)
+    fp = next(fp for fp in fps if os.path.exists(fp))
     with open(fp, 'r') as stream:
         return yaml.load(stream, Loader=Loader)
 
@@ -87,7 +89,7 @@ def add_handled_in_active_sprints(ws, itrack, row, options, families,
 
 
 def main():
-    options = load_options('app.yaml')
+    options = load_options('app.yaml', ['/data', os.getcwd()])
 
     # initialize severities and product families enumerations
     enum = lambda *args: list(enumerate(args))
