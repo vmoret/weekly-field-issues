@@ -59,6 +59,7 @@ WePresent:
                 - WiPG-1600.WM8750
                 - WiPG1600w
                 - MirrorOp.Receiver(Windows)
+                - Curry.WM8880
         boards: 
                 - 1005
                 - 1008
@@ -67,11 +68,20 @@ WeConnect:
         projects: 
                 - ND EDU System
         boards: NULL
+VX:
+        projects:
+                - VX CPI
+                - OSV
+                - OSV Alignment Tool
+        boards: NULL
+Overture: 
+        projects: 
+                - Overture
+        boards: NULL
 Other: 
         projects: 
                 - ND Assets
                 - NGX11-Suite
-                - OSV
-                - OSV Alignment Tool
+                - Licensing field issues
         boards: NULL
 
