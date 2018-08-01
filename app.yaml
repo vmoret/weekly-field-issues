@@ -47,6 +47,7 @@ LCD:
                 - LDX
                 - Nautilus
                 - OVD
+                - KVD-VE
         boards: NULL
 WePresent: 
         projects: 
