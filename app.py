@@ -96,7 +96,8 @@ def main():
     severities = ('S1 - Major', 'S2 - High', 'S3 - Medium', 'S4 - Low')
     severities_1 = ('S1', 'S2', 'S3', 'S4', 'S1+S2', 'Total')
     families = ('ClickShare', 'OpSpace', 'TFN', 'SDP', 'RPC',
-                'LCD', 'WePresent', 'WeConnect', 'VX', 'Overture', 'Other')
+                'LCD', 'WePresent', 'WeConnect', 'VX', 'Overture',
+                'ODM', 'Other')
     observed_during = ('Customer installation', 'Customer use', 'Demo',
                        'Internal Review, FAT, FAI', 'Repair / Service')
 
@@ -122,11 +123,11 @@ def main():
     # calc and add field issues created this week
     add_created_this_week(ws, itrack, 16, options)
 
-    # calcl and add field issues backlog
+    # calc and add field issues backlog
     add_backlog(ws, itrack, 2, options, severities_1, families)
 
     # calc and add handled in active sprints
-    add_handled_in_active_sprints(ws, itrack, 31, options, families, 
+    add_handled_in_active_sprints(ws, itrack, 32, options, families, 
                                   observed_during, severities)
 
     # save XL workbook
